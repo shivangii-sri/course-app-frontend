@@ -1,7 +1,7 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { Button } from "reactstrap";
 import { ToastContainer, toast } from 'react-toastify';
+import Home from "./components/Home";
 
 function App() {
 
@@ -11,9 +11,8 @@ function App() {
   };
   return (
     <div>
-      <ToastContainer />
-        <h1>This is bootstarp component</h1>
-        <Button color="success" onClick={btnHandle}> First React button </Button>
+      <Home />
+      <p>This para is to check property of jumbotron</p>
     </div>
   );
 }
