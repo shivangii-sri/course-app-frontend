@@ -2,6 +2,8 @@ import "./App.css";
 import { Button } from "reactstrap";
 import { ToastContainer, toast } from 'react-toastify';
 import Home from "./components/Home";
+import Course from "./components/Course";
+import AllCourses from "./components/AllCourses";
 
 function App() {
 
@@ -12,7 +14,10 @@ function App() {
   return (
     <div>
       <Home />
-      <p>This para is to check property of jumbotron</p>
+      <AllCourses/>
+      {/* <Course course={ {title:"Django Course" , description:"This is just testing"}}/>
+      <Course course={ {title:"Java Course" , description:"This is a Java Course"}}/> */}
+      
     </div>
   );
 }
