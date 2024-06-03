@@ -1,26 +1,33 @@
 import "./App.css";
-import { Button } from "reactstrap";
-import { ToastContainer, toast } from 'react-toastify';
-import Home from "./components/Home";
-import Course from "./components/Course";
-import AllCourses from "./components/AllCourses";
-import AddCourse from "./components/AddCourse";
+import { Container, Row, Col } from "reactstrap";
+import { ToastContainer, toast } from "react-toastify";
+import Header from "./components/Header";
+import Menus from "./components/Menus";
 
 function App() {
-
-  const btnHandle = () =>
-  {
-    toast("this is my first message using toastify");
-  };
+  // const btnHandle = () =>
+  // {
+  //   toast("this is my first message using toastify");
+  // };
   return (
     <div>
-      <Home />
-      <AllCourses/>
-      
-      {/* <Course course={ {title:"Django Course" , description:"This is just testing"}}/>
-      <Course course={ {title:"Java Course" , description:"This is a Java Course"}}/> */}
-      
-      <AddCourse></AddCourse>
+      <ToastContainer />
+
+        <Container>
+
+          
+          <Header></Header>
+
+          <Row>
+            <Col md={4}>
+              <Menus></Menus>
+            </Col>
+
+            <Col md={8}>
+              <h2>This is Content side</h2>
+            </Col>
+          </Row>
+        </Container>
     </div>
   );
 }
