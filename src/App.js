@@ -3,6 +3,7 @@ import { Container, Row, Col } from "reactstrap";
 import { ToastContainer, toast } from "react-toastify";
 import Header from "./components/Header";
 import Menus from "./components/Menus";
+import Home from "./components/Home";
 
 function App() {
   // const btnHandle = () =>
@@ -24,7 +25,7 @@ function App() {
             </Col>
 
             <Col md={8}>
-              <h2>This is Content side</h2>
+              <Home></Home>
             </Col>
           </Row>
         </Container>

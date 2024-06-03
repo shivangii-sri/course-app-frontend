@@ -5,10 +5,10 @@ function Home()
 {
     return (
         <div className="jumbotron text-center" >
-            <h1>Learn code </h1>
-            <p>This is developed for learning jumbotron</p>
+            <h1>Learnign code is fun !</h1>
+            <p>This is developed for learning code including frontend and backend, developed by Shivangi.</p>
             <Container>
-                <Button>Start Learning</Button>
+                <Button color="primary" outline>Start Learning</Button>
             </Container>
         </div>
     )
