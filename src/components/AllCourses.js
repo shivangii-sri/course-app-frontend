@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Course from "./Course";
 
-function AllCOurses(){
+function AllCourses(){
     const [courses, setCourses] = useState([
         {title:"Java Course" , description:"This is demo Java course"},
         {title:"Django Course" , description:"This is demo Django course"},
@@ -22,4 +22,4 @@ function AllCOurses(){
         </div>
     )
 }
-export default AllCOurses;
+export default AllCourses;

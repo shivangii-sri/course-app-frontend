@@ -4,19 +4,17 @@ import { ToastContainer, toast } from "react-toastify";
 import Header from "./components/Header";
 import Menus from "./components/Menus";
 import Home from "./components/Home";
+import AllCourses from "./components/AllCourses";
+import AddCourse from "./components/AddCourse";
+import {  BrowserRouter as Router,Route, Routes } from "react-router-dom";
 
 function App() {
-  // const btnHandle = () =>
-  // {
-  //   toast("this is my first message using toastify");
-  // };
   return (
     <div>
-      <ToastContainer />
+      <Router>
+        <ToastContainer />
 
-        <Container>
-
-          
+        <Container>          
           <Header></Header>
 
           <Row>
@@ -25,10 +23,15 @@ function App() {
             </Col>
 
             <Col md={8}>
-              <Home></Home>
+              <Routes>
+                <Route path="/" element={<Home/>} exact />
+                <Route path="/add-course" element={<AddCourse/>} exact />
+                <Route path="/view-course" element={<AllCourses/>} exact />
+              </Routes>
             </Col>
           </Row>
         </Container>
+      </Router>
     </div>
   );
 }
